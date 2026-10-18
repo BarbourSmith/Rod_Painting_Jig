@@ -1,13 +1,220 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-64",
-    "name": "Rod_Painting_Jig",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-64",
+  "name": "Rod_Painting_Jig",
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Move",
+      "x": 0.3,
+      "y": 0.5,
+      "uniqueID": "id-127",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": -4
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.9,
+      "y": 0.4,
+      "uniqueID": "id-139",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 25
+        }
+      ]
+    },
+    {
+      "atomType": "Output",
+      "x": 1,
+      "y": 0.5,
+      "uniqueID": "id-65",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.3,
+      "y": 0.9,
+      "uniqueID": "id-67",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 50,
+          "currentEquation": "50"
+        },
+        {
+          "name": "y length",
+          "ioValue": 50,
+          "currentEquation": "50"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.5,
+      "y": 0.9,
+      "uniqueID": "id-71",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 4,
+          "currentEquation": "4"
+        }
+      ]
+    },
+    {
+      "atomType": "Fusion",
+      "x": 0.9,
+      "y": 0.8,
+      "uniqueID": "id-75",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "unionType": "Fusion"
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.1,
+      "y": 0.2,
+      "uniqueID": "id-79",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 2,
+          "currentEquation": "2"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.3,
+      "y": 0.2,
+      "uniqueID": "id-82",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.1,
+      "y": 0.6,
+      "uniqueID": "id-92",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 38.099999999999994,
+          "currentEquation": "1.5*25.4"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.2,
+      "y": 0.6,
+      "uniqueID": "id-95",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "Shape2",
+      "ap1ID": "id-139",
+      "ap2ID": "id-75"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-67",
+      "ap2ID": "id-71"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-71",
+      "ap2ID": "id-75"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-75",
+      "ap2ID": "id-65"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-79",
+      "ap2ID": "id-82"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-92",
+      "ap2ID": "id-95"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-95",
+      "ap2ID": "id-127"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
