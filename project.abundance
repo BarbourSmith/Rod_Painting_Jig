@@ -122,6 +122,40 @@
       ]
     },
     {
+      "atomType": "Export",
+      "x": 0.9,
+      "y": 0.2,
+      "uniqueID": "id-178",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STEP",
+          "currentEquation": "STEP"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "STL Tolerance",
+          "ioValue": 0.05
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Rod_Painting_Jig",
+          "currentEquation": "Rod_Painting_Jig"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "Rod_Painting_Jig"
+    },
+    {
       "atomType": "Output",
       "x": 1,
       "y": 0.5,
@@ -272,6 +306,11 @@
       "ap2Name": "remove",
       "ap1ID": "id-167",
       "ap2ID": "id-173"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-173",
+      "ap2ID": "id-178"
     },
     {
       "ap2Name": "number or geometry",
